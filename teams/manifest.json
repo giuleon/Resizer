@@ -1,0 +1,61 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.9",
+    "version": "1.0.0",
+    "isFullScreen": false,
+    "id": "3f1feadd-e9c5-43e8-b46f-8ecd6b4ef029",
+    "packageName": "com.microsoft.teams.resizer",
+    "developer": {
+        "name": "Giuliano De Luca",
+        "websiteUrl": "https://www.youtube.com/giulianodemo",
+        "privacyUrl": "https://www.youtube.com/giulianodemo",
+        "termsOfUseUrl": "https://www.youtube.com/giulianodemo"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Resizer",
+        "full": "Resizer Demo"
+    },
+    "description": {
+        "short": "Demo of SPFx v.1.2.1",
+        "full": "This is a demo of the latest SPFx version"
+    },
+    "accentColor": "#FFFFFF",
+    "staticTabs": [
+        {
+            "entityId": "dashboard01",
+            "name": "Dashboard",
+            "contentUrl": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=3f1feadd-e9c5-43e8-b46f-8ecd6b4ef029%26forceLocale={locale}",
+            "websiteUrl": "https://giulianodemo.sharepoint.com",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+            "entityId": "about",
+            "scopes": [
+                "personal"
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "*.login.microsoftonline.com",
+        "*.sharepoint.com",
+        "*.sharepoint-df.com",
+        "spoppe-a.akamaihd.net",
+        "spoprod-a.akamaihd.net",
+        "resourceseng.blob.core.windows.net",
+        "msft.spoppe.com"
+    ],
+    "webApplicationInfo": {
+        "resource": "https://{teamSiteDomain}",
+        "id": "00000003-0000-0ff1-ce00-000000000000"
+    }
+}
